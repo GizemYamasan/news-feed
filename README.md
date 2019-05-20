@@ -22,9 +22,9 @@ http://localhost:8080/h2-console
  
 ### TEST
 
-wait for a while to see "fetch and store is started" in logs, then you can see feeds on response
+wait for a while to see "fetch and store is started" in logs, then you can see feeds on response. you can create a new application.properties file whereever you wish and adjust properties then restart to see how it effects.
 
- ``java -jar target/news-feed-0.0.1-SNAPSHOT.jar``
+ ``java -jar target/news-feed-0.0.1-SNAPSHOT.jar --spring.config.location=file:src/main/resources/application.properties``
 
 curl http://localhost:8080/feeds
 
